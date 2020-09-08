@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  height: 20px;
+}
+
+#rs-banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+#rs-banner {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  background: #03002f;
+  background: linear-gradient(90deg, #03002f 0%, #2b004f 56%, #c10037 100%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#rs-banner .rs-horizontal-block-mover {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  top: 113px;
+  left: 0;
+  width: 500px;
+  height: 92px;
+  background: #03002f;
+  background: linear-gradient(90deg, #030037 0%, #ee0001 100%, #c10037 100%);
+  -webkit-animation: rsRacer 4s both infinite ease-in;
+          animation: rsRacer 4s both infinite ease-in;
+}
+
+#rs-banner .rs-horizontal-block-mover .rs-horizontal-block-small {
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
+  width: 100%;
+  height: 80px;
+  background: #03002f;
+  background: linear-gradient(90deg, #03002f 0%, #2b004f 56%, #c10037 100%);
+}
+
+#rs-banner .rs-cars-block {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  left: 100px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container {
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-car-img-container {
+  width: 180px;
+  height: 98px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-car-img-container img {
+  width: 180px;
+  height: 98px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info {
+  box-sizing: border-box;
+  width: 180px;
+  height: 80px;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background: rgba(245, 245, 245, 0.897);
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info .rs-acceleration-stars {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info .rs-acceleration-stars span.golden {
+  color: #d6b20f;
+  text-shadow: 2px 2px 2px gold;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info .rs-acceleration-stars span.normal {
+  color: gray;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info .rs-acceleration-time {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info {
+  box-sizing: border-box;
+  width: 180px;
+  height: 80px;
+  padding: 10px;
+  background: rgba(245, 245, 245, 0.897);
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info img {
+  width: 13px;
+  height: 13px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info .rs-price-stars {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info .rs-price-stars span.golden {
+  color: #d6b20f;
+  text-shadow: 2px 2px 2px gold;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info .rs-price-stars span.normal {
+  color: gray;
+}
+
+#rs-banner .rs-cars-block .rs-car-container .rs-price-info .rs-price-amount {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#rs-banner .rs-cars-block .rs-price-stars span.golden,
+#rs-banner .rs-cars-block .rs-acceleration-stars span.golden {
+  color: gold;
+}
+
+#rs-banner .rs-cars-block .rs-price-stars span.normal,
+#rs-banner .rs-cars-block .rs-acceleration-stars span.normal {
+  color: gray;
+}
+
+@-webkit-keyframes rsRacer {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes rsRacer {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+@media (max-width: 480px) {
+  #rs-banner {
+    width: 100%;
+  }
+
+  #rs-banner .rs-horizontal-block-mover {
+    top: 102px;
+    width: 400px;
+  }
+
+  #rs-banner .rs-horizontal-block-mover .rs-horizontal-block-small {
+    height: 80px;
+  }
+
+  #rs-banner .rs-cars-block {
+    position: relative;
+    left: 25%;
+  }
+
+  #rs-banner .rs-cars-block .rs-car-container {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  #rs-banner .rs-cars-block .rs-car-container .rs-car-img-container {
+    width: 135px;
+    height: 74px;
+  }
+
+  #rs-banner .rs-cars-block .rs-car-container .rs-car-img-container .rs-car-img {
+    width: 135px;
+    height: 74px;
+  }
+
+  #rs-banner .rs-cars-block .rs-car-container .rs-acceleration-info {
+    width: 135px;
+  }
+
+  #rs-banner .rs-cars-block .rs-car-container .rs-price-info {
+    width: 135px;
+  }
+}
+
+@media (max-width: 380px) {
+  #rs-banner .rs-cars-block {
+    position: relative;
+    left: 15%;
+  }
+}
+
+@media (max-width: 330px) {
+  #rs-banner .rs-cars-block {
+    position: relative;
+    left: 5%;
+  }
+}
+
